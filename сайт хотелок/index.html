@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мои хотелки</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="#" class="logo">🎀 Мои хотелки</a>
+  <nav class="nav">
+    <button class="nav-btn active" data-page="home">Домой</button>
+    <button class="nav-btn" data-page="done">Исполненные</button>
+  </nav>
+</header>
+
+<main id="app">
+  <!-- Главная страница -->
+  <section id="home-page" class="page active">
+    <h1 class="page-title">Мои хотелки</h1>
+    <div class="grid" id="wishlist"></div>
+  </section>
+
+  <!-- Страница исполненных -->
+  <section id="done-page" class="page">
+    <h1 class="page-title">Исполненные хотелки</h1>
+    <p class="empty" id="done-empty">Исполненных хотелок пока нет 🤍</p>
+    <div class="grid" id="done-list"></div>
+  </section>
+
+  <!-- Страница детали -->
+  <section id="detail-page" class="page">
+    <button class="back-btn" id="back-btn">← Назад</button>
+    <div class="detail-card">
+      <div class="detail-photo" id="d-photo">Фото</div>
+      <div class="detail-rating" id="d-rating">★★★★★</div>
+      <h2 class="detail-title" id="d-title">Название</h2>
+      <p class="detail-sku" id="d-sku">Артикул: —</p>
+      <a class="detail-link" id="d-link" href="#" target="_blank">Ссылка на товар</a>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
